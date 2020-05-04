@@ -1,4 +1,4 @@
-name: test 1
+name: Pull workflow
 
 on: [pull_request]
 
