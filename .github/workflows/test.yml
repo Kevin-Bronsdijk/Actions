@@ -12,6 +12,7 @@ jobs:
       - name: message
         run: echo "Test 1,2,3"
       - name: multiple
+        if: always()
         run: |
           node -v
           npm -v
