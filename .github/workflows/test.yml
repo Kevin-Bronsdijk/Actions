@@ -19,9 +19,10 @@ jobs:
         shell: python
   run-shell-command_win:
     runs-on: windows-latest
+    needs: [run-shell-command]
     steps:
       - name: PS
         run: Get-Location
-      - name: PS
+      - name: Bash
         run: pwd
         shell: bash
