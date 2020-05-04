@@ -1,0 +1,16 @@
+name: Schedule workflow
+
+on:
+  schedule:
+    - cron: "15 14 * 5 *"
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: message
+        run: echo "Test 1,2,3 from scheduler"
+      - name: multiple
+        run: |
+          node -v
+          npm -v
