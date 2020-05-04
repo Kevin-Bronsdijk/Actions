@@ -1,0 +1,14 @@
+name: test 1
+
+on: [pull_request]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: message
+        run: echo "Test 1,2,3 from pull"
+      - name: multiple
+        run: |
+          node -v
+          npm -v
