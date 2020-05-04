@@ -3,11 +3,11 @@ name: test 1
 on: [push]
 
 jobs:
+  run-shell-command:
     runs-on: ubuntu-latest
     steps:
       - name: message
         run: echo "Test 1,2,3"
-    step:
       - name: multiple
         run: |
           node -v
