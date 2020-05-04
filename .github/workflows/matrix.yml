@@ -2,14 +2,14 @@ name: matrix
 
 on: push
 
-Jobs:
+jobs:
   node-version:
     runs-on: ubuntu-latest
     steps:
-      - name "log version"
-      run: node -v
+      - name: log version
+        run: node -v
       - uses: actions/setup-node@v1
-      with:
-        node-version: 6
-      - name "log version again
-      run: node -v
+        with:
+          node-version: 6
+      - name:  log version again
+        run: node -v
