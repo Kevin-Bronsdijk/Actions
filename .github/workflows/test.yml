@@ -1,0 +1,16 @@
+name: test 1
+
+on: [push]
+
+jobs:
+    runs-on: unbuntu-latest
+    steps:
+      - name: message
+        run: echo "Test 1,2,3"
+    step:
+      - name: multiple
+        run: |
+          node -v
+          npm -v
+
+  
