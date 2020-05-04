@@ -1,5 +1,8 @@
 name: Shell
 
+env: 
+  blah: "hello!"  
+
 on: 
   push:
     branches: 
